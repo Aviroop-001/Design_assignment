@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Antic+Didone&family=Exo:wght@100;200;300&family=Fredericka+the+Great&family=Montserrat:ital,wght@0,100;0,200;0,300;1,100&family=Poppins:ital,wght@0,100;0,200;0,300;1,100;1,200;1,300&family=Roboto:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.app{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.landing{
+    /* border: 1px solid blue; */
+    background-color: rgb(126, 23, 199);
+    background-image: linear-gradient(to top, rgb(126, 23, 199), rgb(47, 4, 120));
+    width: 23%;
+    height: 90%;
+    border-radius: 15px;
+    color: rgb(211, 157, 249);
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.landingimage{
+  padding: 1px 1.3rem;
+    flex: 4;
+    width: 80%;
+}
+.landingmain{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;align-items: center;
+}
+.landinghead{
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+}
+.sub{
+    margin-bottom: 1rem;
+}
+.form {
+  box-sizing: border-box;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 80%;
+  background-color: rgb(119, 22, 193);
+  /* border: 1px solid red; */
+}
+
+.title {
+  color: rgb(229, 194, 255);
+  font-family: sans-serif;
+  font-size: 36px;
+  font-weight: 600;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.input-container {
+  height: 40px;
+  position: relative;
+  width: 100%;
+  /* background-color: rgb(138, 88, 213); */
+}
+
+.ic1 {
+  margin-top: 10px;
+}
+
+.ic2 {
+  margin-top: 30px;
+}
+
+.input {
+  background-color: rgb(219, 172, 252);
+  border-radius: 2px;
+  border: 0;
+  box-sizing: border-box;
+  color: rgb(148, 12, 197);
+  font-size: 18px;
+  height: 100%;
+  outline: 0;
+  padding: 4px 20px 0;
+  width: 100%;
+}
+
+.cut {
+  /* background-color: #15172b; */
+  border-radius: 10px;
+  height: 20px;
+  left: 20px;
+  position: absolute;
+  top: -20px;
+  transform: translateY(0);
+  transition: transform 200ms;
+  width: 76px;
+}
+
+.cut-short {
+  width: 50px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+  transform: translateY(8px);
+}
+
+.placeholder {
+  color: #e1cff9;
+  font-size: 0.8rem;
+  font-family: sans-serif;
+  left: 20px;
+  line-height: 14px;
+  pointer-events: none;
+  transform-origin: 0 50%;
+  transition: transform 200ms, color 200ms;
+  top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+  transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+  color: #808097;
+}
+
+.input:focus ~ .placeholder {
+  color: #dc2f55;
+}
+
+
+.submit {
+  background-color: rgb(195, 116, 251);
+  color: rgb(248, 238, 254);
+  border: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  margin-top: 1rem;
+  text-align: center;
+  width: 90%;
+  font-size: 1.3rem;
+  font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+}
+#impobtn{
+    background-color: yellow;
+    color: rgb(126, 23, 199);
+}
+#impobtn:active{
+    background-color: rgb(91, 150, 3);
+}
+#signbtn{
+    background-color: yellow;
+    color: rgb(126, 23, 199);
+    font-size: 1.5rem;
+    font-weight: bold;
+    height: 3rem;
+}
+#signbtn:active{
+    background-color: rgb(91, 150, 3);
+}
+.submit:active {
+  background-color: rgb(140, 70, 140);
+}
+
+
+.signup{
+    /* border: 1px solid blue; */
+    background-color: rgb(126, 23, 199);
+    background-image: linear-gradient(to top, rgb(126, 23, 199), rgb(47, 4, 120));
+    width: 23%;
+    height: 90%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-display: column;
+    align-items: center;
+    color: rgb(211, 157, 249);
+}
+#loginbtn{
+    margin-top: 1rem;
+}
+.feedback{
+    /* border: 1px solid blue; */
+    background-color: rgb(126, 23, 199);
+    background-image: linear-gradient(to top, rgb(126, 23, 199), rgb(47, 4, 120));
+    width: 22%;
+    height: 88%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(211, 157, 249);
+    padding: 0.5rem;
+}
+.feedbackhead{
+    flex: 2;
+    font-size: 2rem;
+    font-family: "Poppins";
+    font-weight: bold;
+    text-align: center;
+}
+.feedbackimgsection{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.feedbackimg{
+  width: 50%;
+}
+.star-widget input{
+  display: none;
+}
+.star-widget label{
+  font-size: 20px;
+  color: #444;
+  padding: 10px;
+  float: right;
+  transition: all 0.2s ease;
+}
+input:not(:checked) ~ label:hover,
+input:not(:checked) ~ label:hover ~ label{
+  color: #fd4;
+}
+input:checked ~ label{
+  color: #fd4;
+}
+input#rate-5:checked ~ label{
+  color: #fe7;
+  text-shadow: 0 0 20px #952;
+}
+#rate-1:checked ~ form header:before{
+  content: "I just hate it ";
+}
+#rate-2:checked ~ form header:before{
+  content: "I don't like it ";
+}
+#rate-3:checked ~ form header:before{
+  content: "It is awesome ";
+}
+#rate-4:checked ~ form header:before{
+  content: "I just like it ";
+}
+#rate-5:checked ~ form header:before{
+  content: "I just love it ";
+}
+.container form{
+  display: none;
+}
+input:checked ~ form{
+  display: block;
+}
+.feedbackinput{
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#textarea{
+    height: 8rem;
+    width: 90%;
+}
+#feedbtn{
+    background-color: yellow;
+    color: rgb(126, 23, 199);
+    margin-top: 2rem;
+}
+#feedbtn:active{
+    background-color: rgb(91, 150, 3);
+}
